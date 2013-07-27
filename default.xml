@@ -5,8 +5,13 @@
            fetch="https://android-review.googlesource.com/" />
   <remote name="rascarlo"
            fetch="git://github.com/rascarlo/" />
+  
   <remote name="ras"
            fetch="git://github.com/rasbeanDC/" />
+   
+  <remote name="github"
+           fetch="git://github.com/Android-Butter/"
+           review=""/>         
            
   <default revision="refs/tags/android-4.3_r2.1"
            remote="aosp"
@@ -40,6 +45,8 @@
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
   <project path="device/lge/mako" name="device/lge/mako" groups="device,mako" />
   <project path="device/lge/mako-kernel" name="device/lge/mako-kernel" groups="device,mako" revision="refs/tags/android-4.3_r2.1_" />
+  <project path="device/htc/msm8660-common" name="butter_device_htc_msm8660-common" remote="github" revision="jellybean"/>
+  <project path="device/htc/pyramid" name="butter_device_htc_pyramid" remote="github" revision="jellybean" /> 
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
@@ -375,5 +382,7 @@
   <project path="tools/idea" name="platform/tools/idea" groups="notdefault,tools" />
   <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
+  <project path="vendor/raskorr" name="android_vendor_raskorr" remote="ras" revision="jb-ras-mr1.1" />
+  <project path="vendor/htc" name="butter_vendor_htc" remote="github" revision="jellybean" />
 
 </manifest>
